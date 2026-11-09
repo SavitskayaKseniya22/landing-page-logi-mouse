@@ -13,7 +13,7 @@
   }
 
   img.d-block {
-    width: 375px;
+    width: min(100vw, 375px);
     height: 240px;
 
     @media (min-width: 894px) {

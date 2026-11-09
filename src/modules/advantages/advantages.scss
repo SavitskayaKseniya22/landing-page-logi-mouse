@@ -20,7 +20,7 @@
 }
 
 .contain__image {
-  width: 375px;
+  width: min(100vw, 375px);
   height: 310px;
   background-size: cover;
   background-repeat: no-repeat;

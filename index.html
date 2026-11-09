@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,403 @@
     <link rel="icon" type="image/png" href="/src/favicon.png" />
   </head>
   <body>
+    <header class="top__header">
+      <div class="inner top-header__inner">
+        <a href="#top" aria-label="Logitech — на главную">
+          <img
+            class="top-header__logo"
+            width="145"
+            height="45"
+            src="/src/modules/top/assets/img__logo_white.png"
+            alt="Logitech"
+          />
+        </a>
+
+        <button
+          type="button"
+          class="top-header__button_open"
+          aria-label="Открыть меню"
+          aria-controls="mobile-navigation"
+          aria-expanded="false"
+        >
+          <img
+            width="30"
+            height="20"
+            src="/src/modules/top/assets/img__burger_big.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </button>
+
+        <nav aria-label="Основная навигация">
+          <ul class="top__navigator">
+            <li><a href="#wireless">работайте без проводов</a></li>
+            <li><a href="#surfaces">где угодно</a></li>
+            <li><a href="#devices">с комфортом</a></li>
+            <li><a href="#features">с разных устройств</a></li>
+            <li><a href="#advantages__elem_comfort">в любое время</a></li>
+            <li><a href="#advantages__elem_fast">и еще быстрее</a></li>
+          </ul>
+        </nav>
+
+        <nav
+          class="top-navigator-slide__container"
+          id="mobile-navigation"
+          aria-label="Мобильная навигация"
+        >
+          <ul class="top__navigator_slide">
+            <li><a href="#wireless">без проводов</a></li>
+            <li><a href="#surfaces">за любым столом</a></li>
+            <li><a href="#devices">одновременно с нескольких устройств</a></li>
+            <li><a href="#features">с индивидуальными настройками</a></li>
+            <li><a href="#advantages__elem_fast">быстрее, чем когда-либо</a></li>
+            <li>
+              <a href="#advantages__elem_comfort">
+                комфортно. эргономично. интуитивно.
+              </a>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="top-header__button_close"
+                aria-label="Закрыть меню"
+              >
+                <img
+                  width="25"
+                  height="25"
+                  src="/src/modules/top/assets/img__cross_big.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="top" id="top" aria-labelledby="page-title">
+      <div class="inner top__inner">
+        <a href="#top" aria-label="Logitech — на главную">
+          <img
+            class="top__logo"
+            width="240"
+            height="73"
+            src="/src/modules/top/assets/img__logo_black.png"
+            alt="Logitech"
+          />
+        </a>
+        <h1 class="top__title" id="page-title">работайте продуктивнее</h1>
+        <p class="inner top__info">
+          Создана для эффективной работы, программирования и творчества
+        </p>
+        <a href="#wireless" class="top__arrow_down" aria-label="К разделу «Без проводов»"></a>
+      </div>
+    </section>
+
+    <main>
+      <section class="wireless" id="wireless" aria-labelledby="wireless-title">
+        <div class="inner wireless__inner">
+          <h2 id="wireless-title">без проводов</h2>
+          <p class="wireless__info">
+            Беспроводная мышь MX Master 3 работает без проводов до нескольких
+            месяцев. Вы закроете приоритетные задачи прежде, чем понадобится
+            подзарядка.
+          </p>
+          <span class="wireless__addition" aria-label="До 70 дней без подзарядки">
+            <span class="wireless__addition_main" aria-hidden="true">70</span>
+            <span class="wireless__addition_sub" aria-hidden="true">дней</span>
+          </span>
+          <ul class="wireless__img-container">
+            <li>
+              <img
+                class="wireless__img wireless__img_front"
+                width="533"
+                height="286"
+                src="/src/modules/wireless/assets/img-mouse_front.png"
+                alt="Вид мыши спереди"
+              />
+            </li>
+            <li>
+              <img
+                class="wireless__img wireless__img_side"
+                width="836"
+                height="495"
+                src="/src/modules/wireless/assets/img-mouse_side.png"
+                alt="Мышь MX Master 3 сбоку"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="surfaces inner" id="surfaces" aria-labelledby="surfaces-title">
+        <h2 id="surfaces-title">за любым столом</h2>
+        <p class="surfaces__info surfaces__info_top">
+          Исследуйте ландшафты своего дома, не отвлекаясь от работы. MX Master 3
+          достаточно компактная, чтобы сменить рабочее место и перенестись с
+          ноутбуком на кухню.
+        </p>
+        <ul class="surfaces__advantages">
+          <li>
+            <span>В 5 раз</span>
+            <p>точнее предшественников</p>
+          </li>
+          <li>
+            <span>4 000</span>
+            <p>точек на дюйм чувствительность датчика</p>
+          </li>
+        </ul>
+
+        <div
+          class="carousel slide surfaces__carousel"
+          id="surfaces__carousel"
+          data-bs-ride="carousel"
+          aria-label="Работа мыши на разных поверхностях"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/src/modules/surfaces/assets/img-cloth.png"
+                srcset="/src/modules/surfaces/assets/img-cloth.png 375w, /src/modules/surfaces/assets/img-cloth_middle.png 894w, /src/modules/surfaces/assets/img-cloth_big.png 1280w"
+                sizes="(max-width: 893px) 375px, (max-width: 1279px) 894px, 1280px"
+                class="d-block w-100"
+                alt="Мышь на ткани"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/src/modules/surfaces/assets/img-glass.png"
+                srcset="/src/modules/surfaces/assets/img-glass.png 375w, /src/modules/surfaces/assets/img-glass_middle.png 894w, /src/modules/surfaces/assets/img-glass_big.png 1280w"
+                sizes="(max-width: 893px) 375px, (max-width: 1279px) 894px, 1280px"
+                class="d-block w-100"
+                alt="Мышь на стекле"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/src/modules/surfaces/assets/img-linoleum.png"
+                srcset="/src/modules/surfaces/assets/img-linoleum.png 375w, /src/modules/surfaces/assets/img-linoleum_middle.png 894w, /src/modules/surfaces/assets/img-linoleum_big.png 1280w"
+                sizes="(max-width: 893px) 375px, (max-width: 1279px) 894px, 1280px"
+                class="d-block w-100"
+                alt="Мышь на линолеуме"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/src/modules/surfaces/assets/img-marble.png"
+                srcset="/src/modules/surfaces/assets/img-marble.png 375w, /src/modules/surfaces/assets/img-marble_middle.png 894w, /src/modules/surfaces/assets/img-marble_big.png 1280w"
+                sizes="(max-width: 893px) 375px, (max-width: 1279px) 894px, 1280px"
+                class="d-block w-100"
+                alt="Мышь на мраморе"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/src/modules/surfaces/assets/img-wood.png"
+                srcset="/src/modules/surfaces/assets/img-wood.png 375w, /src/modules/surfaces/assets/img-wood_middle.png 894w, /src/modules/surfaces/assets/img-wood_big.png 1280w"
+                sizes="(max-width: 893px) 375px, (max-width: 1279px) 894px, 1280px"
+                class="d-block w-100"
+                alt="Мышь на деревянной поверхности"
+              />
+            </div>
+          </div>
+
+          <b class="surfaces__carousel-title">Переключите поверхность</b>
+
+          <div class="surfaces__carousel-controls">
+            <button
+              class="carousel-control-prev carousel-control"
+              type="button"
+              data-bs-target="#surfaces__carousel"
+              data-bs-slide="prev"
+              aria-label="Предыдущая поверхность"
+            >
+              <img
+                src="/src/modules/surfaces/assets/icon-arrow_left.png"
+                alt=""
+                width="13"
+                height="21"
+                class="surfaces__carousel-control_left"
+              />
+            </button>
+
+            <div class="surfaces__carousel-indicators">
+              <button type="button" data-bs-target="#surfaces__carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ткань">
+                <img src="/src/modules/surfaces/assets/img-texture_cloth.png" alt="" width="30" height="30" />
+              </button>
+              <button type="button" data-bs-target="#surfaces__carousel" data-bs-slide-to="1" aria-label="Стекло">
+                <img src="/src/modules/surfaces/assets/img-texture_glass.png" alt="" width="30" height="30" />
+              </button>
+              <button type="button" data-bs-target="#surfaces__carousel" data-bs-slide-to="2" aria-label="Линолеум">
+                <img src="/src/modules/surfaces/assets/img-texture_linoleum.png" alt="" width="30" height="30" />
+              </button>
+              <button type="button" data-bs-target="#surfaces__carousel" data-bs-slide-to="3" aria-label="Мрамор">
+                <img src="/src/modules/surfaces/assets/img-texture_marble.png" alt="" width="30" height="30" />
+              </button>
+              <button type="button" data-bs-target="#surfaces__carousel" data-bs-slide-to="4" aria-label="Дерево">
+                <img src="/src/modules/surfaces/assets/img-texture_wood.png" alt="" width="30" height="30" />
+              </button>
+            </div>
+
+            <button
+              class="carousel-control-next carousel-control"
+              type="button"
+              data-bs-target="#surfaces__carousel"
+              data-bs-slide="next"
+              aria-label="Следующая поверхность"
+            >
+              <img
+                src="/src/modules/surfaces/assets/icon-arrow_right.png"
+                alt=""
+                width="13"
+                height="21"
+                class="surfaces__carousel-control_right"
+              />
+            </button>
+          </div>
+        </div>
+
+        <p class="surfaces__info">
+          Благодаря технологии Logitech Darkfierd, MX Master 3 работает на любой
+          поверхности, даже на стекле.
+        </p>
+      </section>
+
+      <section class="devices" id="devices" aria-labelledby="devices-title">
+        <div class="inner devices__inner">
+          <h2 id="devices-title">одновременно с нескольких <br /> устройств</h2>
+          <ul class="devices_info">
+            <li>
+              С технологией Flow вы сможете работать одновременно на нескольких
+              компьютерах, мгновенно переключаясь между разными операционными
+              системами — даже между Windows® и macOS. Например, достаточно
+              скопировать текст, изображение или файл на MacBook и переместить
+              его на Windows PC без задержек.
+            </li>
+            <li>
+              Клавиатура MX Keys отслеживает перемещение курсора мыши MX Master
+              3, благодаря чему ваш текст появится там, где вы работаете в
+              текущий момент.
+            </li>
+          </ul>
+          <ul class="devices_steps">
+            <li>1. Нажмите и удерживайте папку, чтобы переместить её</li>
+            <li>2. Перенесите папку на любой из соседних экранов</li>
+            <li>3. Да, всё так просто!</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="features" id="features" aria-labelledby="features-title">
+        <div class="inner features__inner">
+          <h2 id="features-title">с индивидуальными настройками</h2>
+          <p class="features__info">
+            Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря
+            индивидуальным настройкам, вы сможете настроить кнопки и жесты
+            практически под любое используемое приложение.
+          </p>
+          <img
+            class="features__image"
+            src="/src/modules/features/assets/img-mouse_main.png"
+            width="1171"
+            height="698"
+            alt="Мышь MX Master 3 с обозначенными функциями"
+          />
+
+          <div
+            class="carousel slide features__carousel"
+            id="features__carousel"
+            data-bs-ride="carousel"
+            aria-label="Настройки мыши в приложениях"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/src/modules/features/assets/carousel/img-1.png" srcset="/src/modules/features/assets/carousel/img-1.png 375w, /src/modules/features/assets/carousel/img-1_middle.png 894w" sizes="(max-width: 893px) 375px, 894px" class="d-block w-100" alt="Настройки для Photoshop" />
+              </div>
+              <div class="carousel-item">
+                <img src="/src/modules/features/assets/carousel/img-2.png" srcset="/src/modules/features/assets/carousel/img-2.png 375w, /src/modules/features/assets/carousel/img-2_middle.png 894w" sizes="(max-width: 893px) 375px, 894px" class="d-block w-100" alt="Настройки для видеомонтажа" />
+              </div>
+              <div class="carousel-item">
+                <img src="/src/modules/features/assets/carousel/img-3.png" srcset="/src/modules/features/assets/carousel/img-3.png 375w, /src/modules/features/assets/carousel/img-3_middle.png 894w" sizes="(max-width: 893px) 375px, 894px" class="d-block w-100" alt="Настройки для работы в браузере" />
+              </div>
+              <div class="carousel-item">
+                <img src="/src/modules/features/assets/carousel/img-4.png" srcset="/src/modules/features/assets/carousel/img-4.png 375w, /src/modules/features/assets/carousel/img-4_middle.png 894w" sizes="(max-width: 893px) 375px, 894px" class="d-block w-100" alt="Настройки для офисных приложений" />
+              </div>
+              <div class="carousel-item">
+                <img src="/src/modules/features/assets/carousel/img-5.png" srcset="/src/modules/features/assets/carousel/img-5.png 375w, /src/modules/features/assets/carousel/img-5_middle.png 894w" sizes="(max-width: 893px) 375px, 894px" class="d-block w-100" alt="Настройки для работы с документами" />
+              </div>
+              <div class="carousel-item">
+                <img src="/src/modules/features/assets/carousel/img-6.png" srcset="/src/modules/features/assets/carousel/img-6.png 375w, /src/modules/features/assets/carousel/img-6_middle.png 894w" sizes="(max-width: 893px) 375px, 894px" class="d-block w-100" alt="Настройки для видеоредактора" />
+              </div>
+            </div>
+
+            <div class="features__carousel-indicators carousel-indicators">
+              <button type="button" data-bs-target="#features__carousel" data-bs-slide-to="0" aria-current="true" aria-label="Экран 1" class="carousel-indicator active"></button>
+              <button type="button" data-bs-target="#features__carousel" data-bs-slide-to="1" aria-label="Экран 2" class="carousel-indicator"></button>
+              <button type="button" data-bs-target="#features__carousel" data-bs-slide-to="2" aria-label="Экран 3" class="carousel-indicator"></button>
+              <button type="button" data-bs-target="#features__carousel" data-bs-slide-to="3" aria-label="Экран 4" class="carousel-indicator"></button>
+              <button type="button" data-bs-target="#features__carousel" data-bs-slide-to="4" aria-label="Экран 5" class="carousel-indicator"></button>
+              <button type="button" data-bs-target="#features__carousel" data-bs-slide-to="5" aria-label="Экран 6" class="carousel-indicator"></button>
+            </div>
+          </div>
+
+          <div class="software">
+            <ul class="software__list">
+              <li><img src="/src/modules/features/assets/apps/img_ps.png" width="35" height="35" alt="Photoshop" /></li>
+              <li><img src="/src/modules/features/assets/apps/img_pr.png" width="35" height="35" alt="Premiere Pro" /></li>
+              <li><img class="software_item_long" width="80" height="35" src="/src/modules/features/assets/apps/img_browsers.png" alt="Браузеры" /></li>
+              <li><img src="/src/modules/features/assets/apps/img_word.png" width="40" height="35" alt="Word" /></li>
+              <li><img src="/src/modules/features/assets/apps/img_point.png" width="40" height="35" alt="PowerPoint" /></li>
+              <li><img src="/src/modules/features/assets/apps/img_ex.png" width="40" height="35" alt="Excel" /></li>
+              <li><img src="/src/modules/features/assets/apps/img_vid.png" width="35" height="35" alt="Видеоредакторы" /></li>
+            </ul>
+            <p class="software__info">
+              Начните работать продуктивнее с момента покупки — устройство
+              предварительно оптимизировано под популярные приложения на Windows
+              и Mac.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages inner" id="advantages" aria-label="Преимущества мыши">
+        <div class="advantages__elem" id="advantages__elem_comfort">
+          <div class="advantages__text advantages__text_first">
+            <h2>комфортно. эргономично. интуитивно.</h2>
+            <p>
+              Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять
+              форму вашей ладони. Но не менее важны колесико прокрутки для
+              большого пальца и расположение кнопок жестов, с которыми вы будете
+              творить уверенно как никогда.
+            </p>
+          </div>
+          <div class="contain__image contain__image_first" aria-hidden="true"></div>
+        </div>
+        <div class="advantages__elem">
+          <div class="advantages__text advantages__text_second" id="advantages__elem_fast">
+            <h2>быстрее, чем когда-либо</h2>
+            <p>
+              Компьютерная мышь MX Master 3 предлагает ультимативный механизм
+              прокрутки со скоростью 1000 строк за 1 секунду. С точностью до
+              пикселя. Бесшумно.
+            </p>
+          </div>
+          <div class="contain__image contain__image_second" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="inner">
+        <p>
+          Copyright © 2021 Logitech
+          <br />
+          Все права защищены
+        </p>
+      </div>
+    </footer>
+
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>
