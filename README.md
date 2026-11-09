@@ -17,7 +17,7 @@ Logitech mouse advertising landing page
 ## How to use
 1. Clone the repo
 ``` bash
-git clone https://github.com/SavitskayaKseniya22/Logi_mouse.git
+git clone https://github.com/SavitskayaKseniya22/landing-page-logi-mouse.git
 ```
 
 2. Install dependencies
