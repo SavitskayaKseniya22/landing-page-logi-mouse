@@ -1,4 +1,4 @@
-# [Logi mouse](https://logi-mouse.vercel.app)
+# [Logi mouse](https://landing-page-logi-mouse.netlify.app/)
 Logitech mouse advertising landing page
 
 ## Features
