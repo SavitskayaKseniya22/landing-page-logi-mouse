@@ -6,7 +6,6 @@ import imgBurger from './assets/img__burger_big.png';
 import imgCross from './assets/img__cross_big.png';
 
 export default class Header extends HTMLDivElement {
-  // eslint-disable-next-line no-useless-constructor
   constructor() {
     super();
   }

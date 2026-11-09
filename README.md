@@ -11,7 +11,7 @@ Logitech mouse advertising landing page
 - Eslint
 - Prettier
 - Sass
-- Webpack
+- Vite
 - Normalize.css
 
 ## How to use
@@ -25,9 +25,9 @@ git clone https://github.com/SavitskayaKseniya22/Logi_mouse.git
 npm install
 ```
 
-3. Start the dev server
+3. Start the Vite dev server
 ``` bash
-npm start
+npm run dev
 ```
 
 ### Screenshots: 
