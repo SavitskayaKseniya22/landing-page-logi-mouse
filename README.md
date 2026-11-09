@@ -32,6 +32,7 @@ npm run dev
 
 ### Screenshots: 
 
-![изображение](https://raw.githubusercontent.com/SavitskayaKseniya22/projects-photos/main/photos/logi-mouse/screenshots/logi-mouse-1280px.png)
+<img width="2543" height="7195" alt="Screenshot 2026-11-09 at 18-17-18 Logi mouse" src="https://github.com/user-attachments/assets/74b5a722-1197-4259-94be-87a1390e2f4c" />
+
 
 
